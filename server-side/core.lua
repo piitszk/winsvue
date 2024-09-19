@@ -166,7 +166,7 @@ AddEventHandler("weaponDamageEvent", function (Sender,Data)
 
     if (GetEntityHealth(Network) > 101) then
         TriggerClientEvent("winsvue:playerDamage",Sender,{
-            -- Em Author e Victim usei o source como identifier, mas em ambiente de produção é necessário o uso de identificadores únicos como user_id pra persistência do cache
+            -- Em Author e Victim usei o source como identifier, mas em ambiente de produção é necessário o uso de identificadores únicos como user_id em **STRING** pra persistência do cache
             Author = {
                 Source = Sender,
                 Identifier = Sender -- "Unique Identifier"
