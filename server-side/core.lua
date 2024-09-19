@@ -160,7 +160,6 @@ RegisterNetEvent("winsvue:updateRoundData", function(Data,Callback)
     TriggerClientEvent("winsvue:updateCombatReport",Victim["Source"],"Taken",Payload)
 end)
 
--- Criar uma validacao pra evitar que chegue dano de veiculos, apenas entre players
 AddEventHandler("weaponDamageEvent", function (Sender,Data)
     local Network = NetworkGetEntityFromNetworkId(Data["hitGlobalId"])
     local Source = NetworkGetEntityOwner(Network)
