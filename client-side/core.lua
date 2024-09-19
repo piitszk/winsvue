@@ -1,5 +1,3 @@
-LocalPlayer["state"]:set("Match",true,false)
-
 local Reports = {}
 
 RegisterNetEvent("winsvue:playerDamage", function(Data)
